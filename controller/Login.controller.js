@@ -1,6 +1,7 @@
 const { validationResult } = require('express-validator');
 const {authModel} = require("../models/Auth.model");
 const bcript = require("bcrypt");
+require("dotenv").config()
 const jwt = require('jsonwebtoken');
 
 const login = async (req, res) =>{

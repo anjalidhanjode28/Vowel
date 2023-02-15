@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+require("dotenv").config()
 const {authModel} = require("../models/Auth.model");
 
 const VerifyAdmin = async (req, res, next) =>{

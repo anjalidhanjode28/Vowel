@@ -1,6 +1,7 @@
 const { validationResult } = require('express-validator');
 const {authModel} = require("../models/Auth.model");
 const bcript = require("bcrypt");
+require("dotenv").config()
 const salt = 6;
 
 const signup = async (req, res) =>{
